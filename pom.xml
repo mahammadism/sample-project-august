@@ -16,6 +16,18 @@
     </dependency>
   </dependencies>
   <build>
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://192.168.1.8:8081/repository/sample-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://192.168.1.8:8081/repository/sample-snap/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <finalName>java-web-project</finalName>
   </build>
 </project>
